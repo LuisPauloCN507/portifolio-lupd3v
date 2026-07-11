@@ -7,7 +7,7 @@ export function Footer() {
         </p>
         <div className="flex gap-4">
           <a
-            href="https://github.com/Lupd3v"
+            href="https://github.com/LuisPauloCN507"
             target="_blank"
             rel="noreferrer"
             className="hover:text-zinc-200 transition-colors"
