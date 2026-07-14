@@ -14,7 +14,12 @@ export function Contact() {
           ou apenas para trocar ideias sobre tecnologia e sistemas.
         </p>
 
-        <form className="flex flex-col gap-4 text-left w-full max-w-xl mx-auto">
+        {/* Formulário integrado com o Formspree */}
+        <form
+          action="https://formspree.io/f/xdaqkgpw"
+          method="POST"
+          className="flex flex-col gap-4 text-left w-full max-w-xl mx-auto"
+        >
           <div className="flex flex-col gap-2">
             <label htmlFor="name" className="text-sm font-medium text-zinc-300">
               Seu Nome
@@ -39,7 +44,7 @@ export function Contact() {
             <input
               type="email"
               id="email"
-              name="email"
+              name="_replyto" // Ajuda a responder diretamente ao email de quem enviou
               placeholder="Ex: joao@empresa.com"
               className="w-full p-3 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-100 focus:outline-none focus:border-blue-500 transition-colors"
               required
